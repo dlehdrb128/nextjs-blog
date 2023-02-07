@@ -1,11 +1,11 @@
-import '../styles/global.css'
+import "../styles/global.css";
 
-const App = ({Component, pageProps}) => {
+const App = ({ Component, pageProps }) => {
+  return (
+    <>
+      <Component {...pageProps} />;
+    </>
+  );
+};
 
-    console.log(Component, pageProps, "App 컴포넌트!")
-return <Component {...pageProps} />
-
-} 
-
-
-export default App
+export default App;
